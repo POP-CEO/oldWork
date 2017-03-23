@@ -1,0 +1,97 @@
+/*My name : abdelrahman Mohamed salah
+this is the first Work on Css and Html
+My account:https://www.facebook.com/body.mhamad
+Thank you my professor Osama Mohamed
+*/
+/* Face*/
+.face{
+   background-color: #f7ff11;
+   width: 500px;
+   height: 600px;
+   overflow: hidden; 
+   margin:auto;
+ border-radius: 231px 229px;
+   position: relative;
+}
+/* Hover*/
+.face:hover > .eye1 .eyebrow1{
+   background-color: #fff; 
+}
+.face:hover > .eye2 .eyebrow2{
+   background-color: #fff; 
+}
+.face:hover > .Mouth{
+top: 85%; 
+}
+/*Eyes */
+.eye1{
+background-color: #111;
+width: 50px;
+height: 60px;
+  border-radius: 26px 21px;
+    position: absolute;
+    top: 149px;
+  left: 87px;
+}
+.eye1 .eyebrow1{
+background-color: #000;
+  width: 13px;
+  height: 13px;
+  border-radius: 26px 21px;
+  position: absolute;
+  top: 23px;
+  left: 17px;
+}
+
+.eye2{
+
+display: inline-block;
+background-color: #111;
+width: 50px;
+height: 60px;
+  border-radius: 26px 21px;
+    position: absolute;
+    top: 149px;
+  left: 340px;
+
+}
+.eye2 .eyebrow2{
+background-color: #000;
+  width: 13px;
+  height: 13px;
+  border-radius: 26px 21px;
+  position: absolute;
+  top: 23px;
+  left: 17px;
+}
+
+/*Mouth */
+ .Mouth{
+background-color: #e01414;
+width: 148px;
+height: 90px;
+  border-radius: 44% 44%;
+    position: relative;
+ top: 59%;
+  left: 33%;
+  
+ }
+ .Mouth .tooth1{
+ background-color: #fff;
+  width: 20px;
+  height: 23px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  left: 75px;
+  position: absolute;
+ }
+ 
+   .Mouth .tooth2{
+  display: inline-block;
+  background-color: #fff;
+  width: 20px;
+  height: 23px;
+  border: 1px solid #ccc;
+  position: absolute;
+  left: 44px;
+   }

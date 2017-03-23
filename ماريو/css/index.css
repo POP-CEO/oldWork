@@ -1,0 +1,150 @@
+*{
+margin:0;
+padding:0;	
+}
+body{
+        min-width: 0;
+}
+.world {
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+  width: 400px;
+  height: 1000px;
+}
+
+#spaceship {
+  fill: orange;
+  stroke: red;
+  stroke-width: 2px;
+}
+.content{
+	position: relative;
+background: #fff8dc;
+width: 100%;
+height: 661px;
+}
+.content .img{
+width: 300%;
+height: 50px;
+position: absolute;
+top:620px;	
+}
+.content .img img{
+    width: 74px;
+    height: 54px;
+    background-repeat: repeat-x;
+    margin: -4px;
+    
+
+}
+#maro{
+left:0px ;
+top: ;
+
+}
+.content .maro{
+position: absolute;
+bottom: 51px;
+transition:all 0.5s ease-in-out;
+-webkit-transition:all 0.5s ease-in-out;
+-moz-transition:all 0.5s ease-in-out;
+-o-transition:all 0.5s ease-in-out;
+left: 5px;
+right:0px;
+}
+.content .maro img{
+width: 70px;
+height: 60px;
+transform: rotateY(180deg);	
+}
+#up{
+      position: fixed;
+    bottom: 40px;
+    left: 47%;
+    width: 73px;
+    height: 28px;
+}
+#Down{
+    position: fixed;
+    bottom: -1px;
+    left: 47%;
+    width: 73px;
+    height: 28px;
+}
+#left{
+    position: fixed;
+    bottom: 22px;
+    left: 54%;
+    width: 73px;
+    height: 28px;
+}
+#right{
+    position: fixed;
+    bottom: 22px;
+    left: 40%;
+    width: 73px;
+    height: 28px;
+}
+
+
+.content .block1 {
+     position: absolute;
+    top: 404px;
+        width: 22%;
+    height: 71px;
+    left: 372px;
+    display: inline-block;
+    overflow: hidden;
+}
+.content .block1 img{
+    width: 79px;
+    height: 77px;
+}
+#blocks5{
+     position: relative;
+    bottom: 77px;
+    left: -251px;
+
+}
+.content .block2 {
+ position: absolute;
+       top: 417px;
+    width: 8%;
+    height: 227px;
+    left: 46%;
+    display: inline-block;
+    overflow: hidden;	
+}
+.content .block2 img{
+	 width: 79px;
+    height: 77px;
+        margin-top: -11px;
+}
+.content .Enmey1{
+       position: absolute;
+    bottom: 9%;
+    width: 13%;
+    height: 51px;
+    left: 70%;
+}
+.content .Enmey1 img{
+padding-right: 37px;
+    width: 65px;
+    height: 56px;	
+
+}
+.content .block3 {
+position: absolute;
+    bottom: 8%;
+    width: 3%;
+    height: 200px;
+    left: 83%;
+    display: inline-block;
+    overflow: hidden	
+}
+.content .block3 img{
+	 width: 79px;
+    height: 77px;
+        margin-top: -11px;
+}

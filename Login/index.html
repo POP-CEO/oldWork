@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+ <!--IE Compatibility Meta-->
+ <meta http-equiv="X-UA-Compatible" content="IE-edeg">
+ <!--Frist MObile Meta-->
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <!--[if lt IE 9]>
+     <script src="js/html5shiv.js"></script>
+     <script src="js/respond.min.js"></script>
+ <![endif]-->
+ <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+ <link rel="stylesheet" type="text/css" href="css/index.css">
+ 
+	<title>Test</title>
+</head>
+    <body>
+
+ <form  method="post" onsubmit="return check()">
+<ul class="form-style-1">
+    <li>
+
+    <label>Full Name <span class="required">*</span></label><input type="text" name="field1" class="field-divided" placeholder="First" id="fname" />&nbsp;<input type="text" name="field2" class="field-divided" placeholder="Last" id="lname" /></li>
+    <li>
+        <label>Email <span class="required">*</span></label>
+        <input type="text" name="field3" class="field-long" id="Email"  />
+    </li>
+    <li>
+       
+
+        <label>Phone Number <input type="text" name="field4" class="field-long" id="phone" /></label>
+   
+    </li>
+    <li>
+        <label>Subject</label>
+        <select name="field4" class="field-select">
+        <option value="Advertise">Advertise</option>
+        <option value="Partnership">Partnership</option>
+        <option value="General Question">General</option>
+        </select>
+    </li>
+    <li>
+        <label>Your Message <span class="required">*</span></label>
+        <textarea name="field5" id="field5" class="field-long field-textarea"></textarea>
+    </li>
+       
+    <li>
+        <input type="submit" value="Submit" id="bnt" />
+    </li>
+ 
+</ul>
+</form>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+.content{
+    text-align: center;
+    margin: 150px auto;
+    background-color: #104e8b;
+    width: 700px;
+    min-height: 446px;
+    border: 1px solid #104e8b;
+
+}
+.col{
+        width: 86%;
+    min-height: 93px;
+    background: #fff;
+    position: relative;
+    top: -10px;
+    left: 62px;
+
+}
+.col h1{
+word-break:break-word;
+
+}
+.content #text1{
+    width: 94%;
+    height: 163px;
+    margin-top: 10px;
+    margin-left: 1px;
+
+}
+}
+.content #text0{
+   color: red;
+    font-size: 20px;
+    position: relative;
+    top: -85px;
+}
+
+}
+button{
+    width: 176px;
+    height: 73px;
+    position: relative;
+    top: 222px;
+  right: 184px;
+    padding-right: 37px;    
+}
