@@ -1,0 +1,170 @@
+/**/
+@import url('https://fonts.googleapis.com/css?family=Mada&subset=arabic');
+*{
+font-family: 'Mada', sans-serif;
+}
+.container-fluid{
+
+}
+body{
+background:#f0f8ff;
+direction: ltr;
+}
+/*navbar*/
+.fixnav{
+background-color:#d9534f;
+border-color: #d9534f;
+border-radius: 0px;
+margin-bottom: 63px;
+}
+.navbar-default .navbar-brand{
+color:#fff;
+}
+.navbar-default .navbar-toggle .icon-bar{
+background-color: #fff;
+}
+
+.navbar-default .navbar-nav>.active>a,
+ .navbar-default .navbar-nav>.active>a:focus,
+  .navbar-default .navbar-nav>.active>a:hover{
+  background-color: #c9302c;
+  color:#fff;
+  font-size: 20px;
+  font-weight: bold;
+  }
+
+.navbar-default .navbar-nav>li>a{
+color:#fff;
+font-size: 20px;
+font-weight: bold;
+}
+.navbar-default .navbar-nav>li>a:hover{
+  background-color: #c9302c;
+}
+.navbar-nav>li{
+margin-left: 30px;
+
+}
+input[type]::-webkit-input-placeholder {
+text-align:center;
+}
+
+
+input[type]:-moz-placeholder { /* Firefox 18- */
+text-align:center;
+}
+
+input[type]::-moz-placeholder {  /* Firefox 19+ */
+text-align:center;
+}
+
+input[type]:-ms-input-placeholder {
+text-align:center;
+}
+.content{
+margin-top: 63px;
+}
+.fix-formgroup{
+margin-bottom:15px;
+}
+.file{
+border: 3px dashed #333;
+height: 400px;
+background: #DDD;
+margin-top: 50px;
+}
+/*this class row[1] */
+
+/*this class table*/
+.table{
+text-align: center;
+}
+/*this class table -> row [1]*/
+.table tr:first-of-type{
+color:#000;
+background: #ddd;
+font-size: 15px;
+font-weight: bold;
+
+}
+.trick{
+display: none;
+}
+.icon{
+  position: relative;
+  top: 112px;
+  left: 43%;
+  font-size: 136px;
+  opacity: 0.6;
+
+}
+/*Button add user*/
+.btmadd{
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.fix-row2{
+background-color: #fff;
+}
+.fixrow{
+margin-top: 50px;
+}
+@media (min-width:750px) and (max-width:970px) {
+  .btmadd{
+  margin-bottom: 50px;
+  }
+  .fix-input{
+    margin-top: 88px;
+  }
+}
+
+@media (min-width:970px) and (max-width:1205px) {
+  .btmadd{
+  margin-bottom: 50px;
+  }
+  .fix-input{
+    margin-top: 88px;
+  }
+}
+
+@media (min-width:768px) and (max-width:1000px) {
+.fixrow{
+margin-top: 60px;
+}
+}
+a:focus, a:hover{
+  text-decoration: none;
+}
+    
+    .jFiler-input-dragDrop{
+      height: 400px;
+      width: 95%;
+    }
+    .jFiler-input-dragDrop .jFiler-input-icon{
+          font-size: 90px;
+    margin-top: 5px;
+    }
+    .jFiler-input-text span{
+          font-size: 20px;
+    }
+    .jFiler-input-text h3{
+      font-size: 30px;
+    }
+    .jFiler-input-choose-btn.blue{
+    text-align: center;
+    padding: 1px 14px;
+    height: 40px;
+    font-size: 25px;
+    letter-spacing: 2.5px;
+    }
+
+        hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 0;
+            border-top: 1px solid #eee;
+        }
+
+    .jFiler {
+      font-family: inherit;
+    }

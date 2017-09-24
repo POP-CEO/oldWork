@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Log in</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="css/AdminLTE.min.css">
+  <style type="text/css">
+	/*Font-Google*/
+@import url('https://fonts.googleapis.com/css?family=Lalezar');
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+html, body{
+      height:92%;
+      }
+body{
+font-family: 'Cairo', sans-serif;
+}
+html, body{
+      height:92%;
+      }
+/*Logo Font */
+.font-log{
+font-family: 'Lalezar', cursive;	
+}
+
+form{
+      margin-bottom: 9px;
+}
+.error{
+	color:#f00;
+
+}
+.has-feedback{
+    text-align: right;
+
+}
+.has-feedback 
+label~.form-control-feedback{
+	top:0px;
+}
+.error {
+    color: #f44336;
+    font-size: small;
+}
+.has-feedback .form-control{
+  text-align: center;
+    font-weight: bold;
+}
+</style>
+  
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="hold-transition login-page">
+<div class="login-box">
+  <div class="login-logo">
+    <a href="" class="font-log"><b>log</b>o</a>
+  </div>
+  
+  <!-- /.login-logo -->
+  <div class="login-box-body">
+    <p class="login-box-msg lead">تسجيل الدخول </p>
+    <p class="bg-danger text-center hidden" data-error="error"> </p>
+   <form action="" method="" id="form">
+      <div class="form-group has-feedback">
+        <input type="email" autocomplete="no" name="email" required="yes"  class="form-control" id='inputEmail' placeholder="لايميل " >
+        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+      </div>
+   
+
+      <div class="form-group has-feedback">
+        <input type="password" class="form-control" name="password" id="inputpassword" required="yes"  placeholder="كلمة السر">
+        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+      </div>
+      <div class="row">
+        <!-- /.col -->
+        <div class="col-xs-12">
+        <button type="submit" id="submit" data-select="login" data-loading-text="Loading..." class="btn btn-primary btn-block btn-flat" autocomplete="off">
+           Sign In
+          </button>
+        </div>
+        <!-- /.col -->
+      </div>
+    </form>
+    <a href="forgetPass.html">I forgot my password</a><br>
+  </div>
+  <!-- /.login-box-body -->
+</div>
+<!-- /.login-box -->
+<!-- jQuery 2.2.3 -->
+<script src="js/jquery-3.1.1.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="js/bootstrap.min.js"></script>
+<!--jquery Validate-->
+<script src="js/jquery.validate.min.js"></script>
+<!-- main js -->
+<script src="js/login.js"></script>
+</body>
+</html>

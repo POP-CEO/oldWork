@@ -1,0 +1,21 @@
+/*this class row[1] */
+.fixrow{
+margin: auto;
+position: relative;
+top: auto;
+left: auto;
+margin-bottom: 50px;
+margin-top: 10px;
+}
+/*this class table*/
+.table{
+text-align: center;
+}
+/*this class table -> row [1]*/
+.table tr:first-of-type{
+color:#000;
+background: #ddd;
+font-size: 15px;
+font-weight: bold;
+
+}

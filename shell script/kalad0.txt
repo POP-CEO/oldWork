@@ -1,0 +1,6 @@
+Hi, My name is Abdelrahman Mohamed Salah 
+My , age is 18 years old 
+my neck name is kalad elmasery
+this is the Frist time to write a shell script 
+
+

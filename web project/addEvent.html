@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Addnew</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- CSS AdminLTE-->
+  <link rel="stylesheet" href="css/AdminLTE.min.css">
+  <!-- CSS AdminLTE-->
+  <link rel="stylesheet" href="css/all-skins.min.css">
+  <!-- CSS_lib_jquery.filer -->
+<link href="css/jquery.filer.css" rel="stylesheet">
+  <!-- CSS_lib_jquery.filer -->
+<link href="css/themes/jquery.filer-dragdropbox-theme.css" rel="stylesheet">
+  <!-- Main Css -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="hold-transition skin-blue layout-top-nav fixed sidebar-collapse">
+<div class="wrapper">
+<header class="main-header">
+    <nav class="navbar navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+
+          <button class="fix-btn-header" data-toggle="offcanvas">
+          <i class="glyphicon glyphicon-menu-hamburger"></i></button>
+        </div>
+        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active">
+            <a href="Home.html">Home <span class="sr-only">(current)</span></a></li>
+            <li><a href="login.html">login</a></li>
+            <li><a href="addEvent.html">AddNew</a></li>
+          </ul>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" id="navbar-search-input" placeholder="Search">
+            </div>
+          </form>
+        </div>
+        <!-- /.navbar-collapse -->
+        <!-- Navbar Right Menu -->
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+            <!-- User Account Menu -->
+            <li class="dropdown user user-menu">
+              <!-- Menu Toggle Button -->
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <!-- The user image in the navbar-->
+                <img src="img/user2-160x160.jpg" class="user-image" alt="User Image">
+                <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                <span class="hidden-xs">Alexander Pierce</span>
+              </a>
+              <ul class="dropdown-menu">
+                <!-- The user image in the menu -->
+                <li class="user-header">
+                  <img src="img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                  <p>
+                    Alexander Pierce - Web Developer
+                    <small>Member since Nov. 2012</small>
+                  </p>
+                </li>
+                <!-- Menu Footer-->
+                <li class="user-footer">
+                  <div class="pull-left">
+                    <a href="#" class="btn btn-default btn-flat">Profile</a>
+                  </div>
+                  <div class="pull-right">
+                    <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-custom-menu -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+  </header>
+<aside class="main-sidebar">
+      <div class="main-sidebar">
+  <!-- Inner sidebar -->
+  <div class="sidebar">
+    <!-- user panel (Optional) -->
+    <div class="user-panel">
+      <div class="pull-left image">
+        <img src="img/user2-160x160.jpg" class="img-circle" alt="User Image">
+      </div>
+      <div class="pull-left info">
+        <p>User Name</p>
+
+        <a href="#"><i class="glyphicon glyphicon-user text-success"></i> Online</a>
+      </div>
+    </div><!-- /.user-panel -->
+
+    <!-- Search Form (Optional) -->
+    <form action="#" method="get" class="sidebar-form">
+      <div class="input-group">
+        <input type="text" name="q" class="form-control" placeholder="Search...">
+        <span class="input-group-btn">
+          <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
+        </span>
+      </div>
+    </form><!-- /.sidebar-form -->
+
+    <!-- Sidebar Menu -->
+    <ul class="sidebar-menu">
+      <li class="header">HEADER</li>
+      <!-- Optionally, you can add icons to the links -->
+      <li class="active"> <a href="#"> <span>Home</span> </a></li>
+      <li><a href="#"><span>addevent</span></a></li>
+      <li><a href="#"><span>Search</span></a></li>
+      <li><a href="#"><span>Addnew</span></a></li>
+    </ul><!-- /.sidebar-menu -->
+
+  </div><!-- /.sidebar -->
+</div><!-- /.main-sidebar --> 
+</aside>
+  <!-- Full Width Column -->
+  <div class="content-wrapper">
+    <div class="container">
+              <!-- Content Header (Page header) -->
+      <section class="content-header">
+          <ol class="breadcrumb">
+          <li><a href="#" class="h4"><i class="glyphicon glyphicon-dashboard "></i> Home/</a></li>
+        </ol>
+
+      </section>
+      <!-- Main content -->
+      <section class="content">
+      <form class="form-horizontal">
+    <!-- Start Form -->
+    <!-- Start First 4 input -->
+          <!-- SELECT2 EXAMPLE -->
+      <div class="box box-default">
+        <div class="box-header with-border">
+          <h3 class="box-title pull-right"> اضافة مستخدم  </h3>
+          <div class="box-tools pull-right">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse">
+            <i class="glyphicon glyphicon-plus"></i></button>
+          </div>
+        </div>
+      <!-- /.box-header -->
+        <div class="box-body">
+          <div class="row">
+          <div class="col-lg-5 col-lg-offset-1">
+        <!--Input اسم المكان المضيف -->
+      <div class=" form-group ">
+      <div class="input-group fix-margin-input">
+      <input type="text" class="form-control" id="Namehostplace" placeholder="الاسم  ">
+      <i class="glyphicon glyphicon-pencil input-group-addon"></i>
+      </div>
+      </div>
+      <!--Input وسائل الاتصال بالمكان المضيف   -->
+        <div class=" form-group ">
+        <div class="input-group fix-margin-input">
+        <input type="text" class="form-control" id="connection" placeholder="المهنة    ">
+        <i class="glyphicon glyphicon-pencil input-group-addon"></i>
+        </div>
+       </div>
+      </div>
+       <div class="col-lg-5 col-lg-offset-1">
+        <!--Input NameEnvent سم الفاعلية  -->
+        <div class=" form-group ">
+        <div class="input-group fix-margin-input">
+          <input type="text" class="form-control" id="NameEnvent" placeholder="مكان العمل   ">
+        <i class="glyphicon glyphicon-pencil input-group-addon"></i>
+          </div>
+          </div>
+           <!--Input name_chife اسم قائد المحافظة  -->
+      <div class="form-group">
+      <div class="input-group fix-margin-input">
+      <input type="text" class="form-control" id="name_chife" placeholder=" الهوايات">
+        <i class="glyphicon glyphicon-pencil input-group-addon"></i>
+      </div>
+      </div>
+      </div>
+        </div>
+        <!-- /.box-body -->
+        </div>
+        <div class="box-footer">
+        </div>
+      </div>
+      <!-- /.box -->
+    <hr />
+    <!-- End First 4 input -->
+  <div class="row">
+          <div class="col-lg-6">
+          <div class="box box-danger">
+            <div class="box-body">
+            <!--Start textarea  -->
+            <textarea class="form-control" id="Textarea" rows="10" placeholder="معلومات تفصيلية  "></textarea>
+            </div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+
+        <div class="col-lg-6">
+          <div class="box box-primary">
+            <div class="box-body">
+          <!--Input اسم المحافظة  -->
+        <div class="form-group  ">
+        <div class="input-group fix-margin-input">
+        <input list="count" class="form-control fix-formgroup" placeholder="المحافظ"  />
+        <i class="glyphicon glyphicon-globe input-group-addon"></i>
+
+          <datalist id="count">
+            <option value="Egypt">
+            <option value="Miny">
+            <option value="aswan">
+            <option value="cairo">
+            <option value="add">
+          </datalist>
+    </div>
+    </div>
+
+  <div class="form-group ">
+  <div class="input-group fix-margin-input">
+    <input type="text" class="form-control " placeholder="العنوان ">
+    <i class="glyphicon glyphicon-globe input-group-addon"></i>
+  </div>
+  </div>
+
+  <div class="form-group">
+        <div class="input-group fix-margin-input">
+    <input type="text" class="form-control"  type="date"   value="07/01/2015">
+    <i class="glyphicon glyphicon-calendar fa fa-calendar input-group-addon" id="end-data"></i>
+
+  </div>
+  </div>
+    </div>
+            <!-- /.box-body -->
+          </div>
+          </div>
+          </div>
+    <hr />
+ 
+    <hr />
+      <div class="box box-default ">
+        <div class="box-header with-border">
+          <h3 class="box-title pull-right">اضافة اشخاص </h3>
+          <div class="box-tools ">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse">
+            <i class="glyphicon glyphicon-plus"></i></button>
+          </div>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+          <div class="row">
+          <div class="col-lg-12" >
+       <!--Start Form -->
+<div class="col-lg-6">
+    <!--start form -> name -->
+    <div class="form-group form-group-lg">
+    <div class="input-group">
+    <input type="text" name="name" class="form-control" value="" id='name' placeholder="Your Name" required autocomplete='on' autofocus='on' >
+    <i class="glyphicon glyphicon-user input-group-addon"></i>
+    
+    </div>
+    </div>
+    <!--start form -> Email -->
+    <div class="form-group form-group-lg">
+    <div class="input-group">
+    <input type="Email" name="Email" class="form-control" value="" id='Email' placeholder="Your Email" required autocomplete='on' autofocus='on' >
+    <i class="glyphicon glyphicon-envelope input-group-addon"></i>
+    </div>
+    </div>
+    <!--start form -> Telephone -->
+    <div class="form-group form-group-lg">
+    <div class="input-group">
+    <input type="tel" name="Telephone" class="form-control" value="" id='Tele' placeholder="Your Telephone" required autocomplete='on' autofocus='on' >
+    <i class="glyphicon glyphicon-earphone input-group-addon"></i>
+    </div>
+    </div>
+    <!--start Button -> Submit -->
+    <button type="button" class="btn btn-success btn-lg btn-block btmadd" id='add0_submit'>اضافة </button>
+    </div>
+
+    <!--End form  -->
+    <!--start Table -->
+    <div class="col-lg-6 " data-show-add0=".sh">
+    <div class="table-responsive">
+    <table class="table table-striped" data-table-0=".table">
+    <tr>
+    <td>#</td>
+    <td>الاسم </td>
+    <td>الايميل </td>
+    <td>الهاتف</td>
+    <td>          </td>
+    <td>          </td>
+    <td>          </td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+          </div>
+          <!-- /.row -->
+        </div>
+        </div>
+    <hr />
+          <!-- SELECT2 EXAMPLE -->
+      <div class="box box-default">
+        <div class="box-header with-border">
+          <h3 class="box-title pull-right">اضافة </h3>
+          <div class="box-tools pull-right">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse">
+            <i class="glyphicon glyphicon-plus"></i></button>
+          </div>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+          <div class="row">
+                <div class="col-lg-12" >
+           <!--Start Form -->
+    <div class="col-lg-6">
+        <!--start form -> name -->
+        <div class="form-group form-group-lg">
+        <div class="input-group">
+        <input type="text" name="name" class="form-control" value="" id='add1_name' placeholder="الاسم " required autocomplete='on' autofocus='on' >
+            <i class="glyphicon glyphicon-user input-group-addon"></i>
+        </div>
+        </div>
+        <!--start form -> Email -->
+        <div class="form-group form-group-lg">
+        <div class="input-group">
+        <input type="Email" name="Email" class="form-control" value="" id='add1_Email' placeholder="الايميل " required autocomplete='on' autofocus='on' >
+        <i class="glyphicon glyphicon-envelope input-group-addon"></i>
+        </div>
+        </div>
+        <!--start form -> Telephone -->
+        <div class="form-group form-group-lg">
+        <div class="input-group">
+        <input type="tel" name="Telephone" class="form-control" value="" id='add1_Tele' placeholder="الهاتف" required autocomplete='on' autofocus='on' >
+        <i class="glyphicon glyphicon-earphone input-group-addon"></i>
+        </div>
+        </div>
+        <!--start Button -> Submit -->
+        <button type="button" class="btn btn-success btn-lg btn-block btmadd" id='add1_submit'>اضافة+</button>
+        </div>
+
+        <!--End form  -->
+        <!--start Table -->
+        <div class="col-lg-6 " data-show-add1=".sh">
+        <div class="table-responsive">
+        <table class=" table table-striped " data-table-1=".table">
+        <tr>
+        <td>#</td>
+        <td>الاسم</td>
+        <td>الايميل</td>
+        <td>الهاتف</td>
+        <td>          </td>
+        <td>          </td>
+        <td>          </td>
+    </tr>
+    </table>
+    </div>
+    </div>
+    </div>
+
+          </div>
+          <!-- /.row -->
+                  <div class="box-footer">
+        </div>
+      </div>
+        </div>
+        <!-- /.box-body -->
+        <hr />
+           <!--Start Content File Upload-->
+      <div class="row">
+      <div class="col-lg-12 col-lg-offset-0">
+      <div id="content">
+    <!-- Example 2 -->
+      <input type="file" name="files[]" id="filer_input2" multiple="multiple">
+    <!-- end of Example 2 -->
+    </div>
+      </div>
+    </div>
+
+<!-- Button Submit -->
+    <div class="col-lg-4 col-lg-offset-4 col-sm-6 col-sm-offset-4 btmadd ">
+    <button type="button" class="btn btn-success btn-lg btn-block btmadd" id='submit'>ارسال </button>
+    </div>
+    <hr />
+
+        
+                </form>   
+      </section>
+        <!-- /.content-wrapper -->
+        </div>
+        </div>
+  <footer class="main-footer">
+    <div class="container">
+      <div class="pull-right hidden-xs">
+        <b>Version</b> 0.1
+      </div>
+      <strong>Copyright &copy; 2017-2018 <a href="https://www.facebook.com/body.mhamad" class="font-log">بودي محمد </a>.</strong> All rights
+      reserved.
+    </div>
+    <!-- /.container -->
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/jquery.slimscroll.min.js"></script>
+
+<!-- JS_lib_jquery.filer -->
+<script src="js/jquery.filer.min.js" type="text/javascript"></script>
+<!-- JS_lib_jquery.filer -->
+<script src="js/custom.js" type="text/javascript"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/app.min.js"></script>
+<!-- Main Js -->
+<script   src="js/addEvent.js"></script>
+
+      </body>
+      </html>

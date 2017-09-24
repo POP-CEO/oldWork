@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Log in</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Theme style -->
+  <link rel="stylesheet" href="css/AdminLTE.min.css">
+  <!-- Main Style-->
+   <style type="text/css">
+  /*Font-Google*/
+@import url('https://fonts.googleapis.com/css?family=Lalezar');
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+body{
+font-family: 'Cairo', sans-serif;
+height: 85%;
+}
+
+/*Logo Font */
+.font-log{
+font-family: 'Lalezar', cursive;  
+}
+
+form{
+      margin-bottom: 9px;
+}
+.error{
+  color:#f00;
+
+}
+.has-feedback{
+    text-align: right;
+
+}
+.has-feedback 
+label~.form-control-feedback{
+    top:0px;
+}
+</style>
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="hold-transition login-page">
+<div class="login-box">
+  <div class="login-logo">
+    <a href="" class="font-log"><b>log</b>in</a>
+  </div>
+  
+  <!-- /.login-logo -->
+  <div class="login-box-body" style="height: 180px;">
+    <p class="login-box-msg">من فضلك ادخل البريد الالكتروني الخاص بك</p>
+   <form action="" method="get" id="form">
+      <div class="form-group has-feedback">
+        <input type="<strong>email</strong>" autocomplete="yes" autofocus='yes' required="yes"  class="form-control" id='inputEmail' placeholder="Email" name="email">
+        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+        <span class="help" id='result'></span>
+      </div>
+   
+        <div class="col-xs-12">
+          <button type="submit" id="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+        </div>
+        <!-- /.col -->
+      </div>
+    </form>
+  </div>
+  <!-- /.login-box-body -->
+</div>
+<!-- /.login-box -->
+<!-- jQuery 2.2.3 -->
+<script src="js/jquery-3.1.1.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="js/bootstrap.min.js"></script>
+<!--jquery Validate-->
+<script src="js/jquery.validate.min.js"></script>
+<!-- main js -->
+<script type="text/javascript">
+  $(document).ready(function(){
+  $('#form').validate({
+    rules:{
+        email:{
+          required:true,
+          email:true
+        }
+    },
+  //Massages Error
+   messages: {
+      email:{
+      required:"من فضلك ادخل بريدك الالكترونى",
+      email:"بريدك الالكترونى غير صحيح"
+    }
+
+    },
+  //End Massages
+    submitHandler: function(form) {
+      $('#form').remove();
+      $('.login-box-msg').empty().text("ستصالك رسالة علي بريدك الالكتروني من الادارة ").css({"color":"green","font-size":"25px"})
+    }
+  });
+  });
+
+</script>
+</body>
+</html>
