@@ -1,19 +1,3 @@
-var a=[1,2,3,5];
-var s=0;
-var i=0;
-for(s=0;s<a.length;){
-	for (i=0;i<a.length;){
-		console.log(a[i]);
-		console.log(a[s]);
-  	if (a[i] + a[s]==8){
-    alert('this is good'+a[i]+" "+a[s]);
-    break;
-    }
-    i++;
-}
-s++;
-}
-/*
 var i=0;
 $('#submit').click(function create(){
 var name=$('#name').val();
@@ -71,4 +55,3 @@ function delete_row(no)
 {
  $('#d'+no).html(" ");
 }
-*/
